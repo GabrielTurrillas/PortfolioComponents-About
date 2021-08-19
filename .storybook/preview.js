@@ -1,3 +1,6 @@
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { viewportsSizes } from '../styles/viewportsSizes';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,5 +9,8 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  layout: 'fullscreen'
+  layout: 'fullscreen',
+  viewport: {
+    viewports: viewportsSizes
+  },
 }
